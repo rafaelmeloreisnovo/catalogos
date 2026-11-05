@@ -17,10 +17,10 @@ DEVICE_STATES = {"TOKEN_VAZIO", "DEVICE_SELF_REPORTED", "INDEPENDENT_ATTESTED"}
 KEYS = {"feature_id", "producer_repo", "source_ref", "state",
         "device_evidence_state", "description", "evidence_refs", "claim_allowed"}
 SENSITIVE = re.compile(r"(?i)(github_pat_|ghp_|gho_|ghu_|ghs_|ghr_|"
-                       r"bearer\\s+|authorization\\s*:|"
+                       r"bearer\s+|authorization\s*:|"
                        r"-----begin [a-z ]*private key-----|"
-                       r"[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,})")
-ID = re.compile(r"^rafgittools\\.[a-z][a-z0-9.-]{2,90}$")
+                       r"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,})")
+ID = re.compile(r"^rafgittools\.[a-z][a-z0-9.-]{2,90}$")
 
 
 class InvalidCatalog(ValueError):
