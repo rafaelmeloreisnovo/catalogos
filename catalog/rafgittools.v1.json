@@ -1,0 +1,25 @@
+{
+  "schema": "rafaelia.public-feature-catalog/v1",
+  "features": [
+    {
+      "feature_id": "rafgittools.auth.profile-refresh",
+      "producer_repo": "rafaelmeloreisnovo/RafGitTools",
+      "source_ref": "https://github.com/rafaelmeloreisnovo/RafGitTools/blob/main/app/src/main/kotlin/com/rafgittools/ui/screens/home/HomeViewModel.kt",
+      "state": "USER_REPORTED",
+      "device_evidence_state": "TOKEN_VAZIO",
+      "description": "GitHub PAT login succeeds, but avatar and repository list become visible only after leaving and reopening the app (user observation; falsifier pending).",
+      "evidence_refs": [],
+      "claim_allowed": false
+    },
+    {
+      "feature_id": "rafgittools.device.local-proof",
+      "producer_repo": "rafaelmeloreisnovo/RafGitTools",
+      "source_ref": "https://github.com/rafaelmeloreisnovo/RafGitTools",
+      "state": "SOURCE_PROPOSAL",
+      "device_evidence_state": "TOKEN_VAZIO",
+      "description": "Export a sanitized device-generated observation envelope through Android SAF, without automatic public upload.",
+      "evidence_refs": [],
+      "claim_allowed": false
+    }
+  ]
+}
