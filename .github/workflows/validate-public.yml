@@ -1,0 +1,22 @@
+name: public-catalog-contract
+on:
+  push:
+    branches: [main, "feat/**"]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2 pinned
+        with:
+          persist-credentials: false
+      - name: Falsifiers (stdlib, no secrets)
+        run: python3 -I -B -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Check public catalog
+        run: python3 -I -B scripts/validate_catalog.py
+      - name: Bound the claim
+        run: echo "Source-schema gate only; Android runtime and identity = TOKEN_VAZIO"
