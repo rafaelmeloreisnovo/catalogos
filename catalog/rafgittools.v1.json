@@ -24,6 +24,18 @@
         "https://github.com/rafaelmeloreisnovo/RafGitTools/commit/48c8631c67f6c62036cde06e4ce769f51bf6807d"
       ],
       "claim_allowed": false
+    },
+    {
+      "feature_id": "rafgittools.github.organization-private-selector",
+      "producer_repo": "rafaelmeloreisnovo/RafGitTools",
+      "source_ref": "https://github.com/rafaelmeloreisnovo/RafGitTools/blob/dc4a02b958fb3447b8e8c3499efb94e07ed6f82f/app/src/main/kotlin/com/rafgittools/data/github/GithubOrganizationInventory.kt",
+      "state": "SOURCE_OBSERVED",
+      "device_evidence_state": "TOKEN_VAZIO",
+      "description": "Source candidate adds GitHub organization lookup and scoped private-repository selection. PAT grants and physical app behavior not verified.",
+      "evidence_refs": [
+        "https://github.com/rafaelmeloreisnovo/RafGitTools/pull/785"
+      ],
+      "claim_allowed": false
     }
   ]
 }
