@@ -4,21 +4,25 @@
     {
       "feature_id": "rafgittools.auth.profile-refresh",
       "producer_repo": "rafaelmeloreisnovo/RafGitTools",
-      "source_ref": "https://github.com/rafaelmeloreisnovo/RafGitTools/blob/main/app/src/main/kotlin/com/rafgittools/ui/screens/home/HomeViewModel.kt",
-      "state": "USER_REPORTED",
+      "source_ref": "https://github.com/rafaelmeloreisnovo/RafGitTools/blob/48c8631c67f6c62036cde06e4ce769f51bf6807d/app/src/main/kotlin/com/rafgittools/ui/screens/home/HomeViewModel.kt",
+      "state": "SOURCE_OBSERVED",
       "device_evidence_state": "TOKEN_VAZIO",
-      "description": "GitHub PAT login succeeds, but avatar and repository list become visible only after leaving and reopening the app (user observation; falsifier pending).",
-      "evidence_refs": [],
+      "description": "Reported PAT login refresh gap; scoped source candidate observes auth changes and invalidates stale requests. Android fix NOT_VERIFIED.",
+      "evidence_refs": [
+        "https://github.com/rafaelmeloreisnovo/RafGitTools/commit/48c8631c67f6c62036cde06e4ce769f51bf6807d"
+      ],
       "claim_allowed": false
     },
     {
       "feature_id": "rafgittools.device.local-proof",
       "producer_repo": "rafaelmeloreisnovo/RafGitTools",
-      "source_ref": "https://github.com/rafaelmeloreisnovo/RafGitTools",
-      "state": "SOURCE_PROPOSAL",
+      "source_ref": "https://github.com/rafaelmeloreisnovo/RafGitTools/blob/48c8631c67f6c62036cde06e4ce769f51bf6807d/app/src/main/kotlin/com/rafgittools/diagnostics/DeviceProofV1.kt",
+      "state": "SOURCE_OBSERVED",
       "device_evidence_state": "TOKEN_VAZIO",
-      "description": "Export a sanitized device-generated observation envelope through Android SAF, without automatic public upload.",
-      "evidence_refs": [],
+      "description": "Candidate source exports Android app self-report through SAF with SHA256 readback; physical proof and APK binding still TOKEN_VAZIO.",
+      "evidence_refs": [
+        "https://github.com/rafaelmeloreisnovo/RafGitTools/commit/48c8631c67f6c62036cde06e4ce769f51bf6807d"
+      ],
       "claim_allowed": false
     }
   ]
